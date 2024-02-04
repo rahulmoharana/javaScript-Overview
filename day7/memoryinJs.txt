@@ -1,0 +1,33 @@
+There are two type of memory in Js
+  1.Stack:
+     It stores Primotive data type.
+  2.heap:
+     It stores Non-primotive data type.
+
+
+follow the day7 folder to better understand and practical implimentation.
+
+
+........
+let myemail = "moharanarahul466@gmail.com";
+let anotheremail = myemail
+anotheremail= "anotheremail@gmail.com"
+console.log(myemail);
+console.log(anotheremail);
+  in this case when we asign the value of myemail to anotheremail then Js will not give the real value.It will provide the copy of that value .
+  when we console the value of myemail then Js will print moharanarahul466@gmail.com
+  but when we console the value of anotheremail then Js will anotheremail@gmail.com.
+  ................................
+
+
+  
+let user = {
+    email:"user.@gmail.com",
+    upi: "user",
+}
+let user2 = user;
+user2.upi = "user2";
+console.log(user2);//  email:"user.@gmail.com", upi: "user",
+console.log(user);  //  email:"user.@gmail.com", upi: "user2",
+
+lets cosider the object in the object the value store in the heap.So the actual value was changed when we asigned  user to user2 variable..
