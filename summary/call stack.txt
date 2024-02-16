@@ -1,0 +1,13 @@
+ code execute in js
+ 1.Execution Context.....
+    
+    1.Global execution Context
+      Its has two section one is Memory Context and another is execution context..
+      In Memorycontext a space is allocated to the variable and no value is stored in it..
+      in execution context the value and operations are happens..
+    2.function execution Context
+      During the execution context when operations are executed.if fuction arrive the a new context is allocated to the function..
+      and the corresponding Memory and execution context..
+      
+ 2.Call Stack
+    It is a type of stack for execution which follow LIFO
