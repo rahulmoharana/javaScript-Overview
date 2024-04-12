@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Factorial</title>
+    <style>
+      body {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .container {
+        height: 500px;
+        width: 800px;
+        background-color: black;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+      }
+      label {
+        color: white;
+        font-size: 2rem;
+        font-weight: 400;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
+      input[type="number"] {
+        width: 330px;
+        height: 30px;
+        border-radius: 10px;
+        font-size: 15px;
+        padding: 0px 10px;
+      }
+      button {
+        margin: 12px;
+        height: 50px;
+        width: 120px;
+        border-radius: 10px;
+        background: #333;
+        justify-content: center;
+        align-items: center;
+        box-shadow: -5px -5px 15px #444, 5px 5px 15px #222,
+          inset 5px 5px 10px #444, inset -5px -5px 10px #222;
+        font-family: "Damion", cursive;
+        cursor: pointer;
+        border: none;
+        font-size: 16px;
+        color: rgb(161, 161, 161);
+        transition: 500ms;
+      }
+
+      button:hover {
+        box-shadow: -5px -5px 15px #444, 5px 5px 15px #222,
+          inset 5px 5px 10px #222, inset -5px -5px 10px #444;
+        color: #d6d6d6;
+        transition: 500ms;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <form action="">
+        <label for="input">Enter a number:</label>
+      <input id="input" type="number" />
+      <button onclick="fact()">Factorial</button>
+      </form>
+     <h2>result</h2> <p class="result"></p>
+    </div>
+    <script>
+         let flag = 1;
+        function fact(){
+            const input = parseInt(document.querySelector("input"));
+            const p = document.querySelector(".result");
+           
+            for(let i= 1;i<=input;i++){
+
+                flag =flag*i;
+                return flag
+
+            }
+            console.log(flag);
+        }
+
+    </script>
+        
+  </body>
+</html>

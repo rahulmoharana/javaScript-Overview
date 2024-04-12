@@ -14,7 +14,8 @@ const JSuser = {
 
 }
 console.log(JSuser["email"])
-Object.freeze(JSuser);
+// Object.freeze(JSuser);
 JSuser.greeting = function(){
     console.log("Hello")
 }
+console.log(JSuser.greeting());
